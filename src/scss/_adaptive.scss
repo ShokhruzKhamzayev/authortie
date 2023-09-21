@@ -1,0 +1,100 @@
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 1000px !important;
+    }
+    .for-phone {
+        display: none;
+    }
+
+    .for-laptop {
+        display: block;
+    }
+
+    header {
+        padding: 35px 0px;
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 37px;
+            ul {
+                display: flex;
+                gap: 30px;
+                align-items: center;
+                list-style: none;
+                a {
+                    color: #575756;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+        }
+        .btn-for-nav {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        .btns {
+            display: flex;
+            gap: 38px;
+            align-items: center;
+        }
+    }
+    main .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 50px;
+        h1 {
+            font-size: 36px;
+            font-weight: 700;
+            max-width: 441px;
+        }
+        .img-main {
+            padding: 0;
+        }
+        img {
+            padding: 0;
+        }
+    }
+    .manual {
+        margin-top: 70px;
+        .list-of-manual {
+            margin-top: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            p {
+                max-width: 178px;
+            }
+        }
+    }
+    .list-of-supporters {
+        display: grid !important;
+        grid-template-columns: repeat(2, 490px);
+    }
+    footer .container {
+        .link-and-copyright {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            .links {
+                margin: 0;  
+            }
+        }
+        .nav-footer {
+            width: 100%;
+            display: flex;
+            justify-content: end;
+            ul {
+                display: flex;
+                gap: 45px;  
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        max-width: 1400px ;
+    }
+}

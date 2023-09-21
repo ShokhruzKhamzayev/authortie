@@ -1,0 +1,55 @@
+@use './variables' as var;
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Graphic Regular";
+    src: url(../assets/font/GraphikLCG-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Graphic Bold";
+    src: url(../assets/font/GraphikLCG-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Graphic Light";
+    src: url(../assets/font/GraphikLCG-Light.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Graphic Regular", sans-serif;
+}
+
+body, html {
+    overflow-x: hidden;
+    background-color: var.$bgMain;
+    .container {
+        max-width: 90%;
+        margin: 0px auto;
+    }
+    a {
+        text-decoration: none;
+        color: var.$textMainColor;
+    }
+
+    button {
+        background-color: transparent;
+        border: 0px;
+        color: var.$textMainColor;
+    }
+
+    .same-header {
+        color: #383838;
+        font-family: 'Graphic Bold', sans-serif;
+        font-size: 25px;
+        font-weight: 700;
+        text-align: center;
+    }
+}
